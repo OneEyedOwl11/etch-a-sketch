@@ -1,0 +1,5 @@
+create the basic html
+find out how the javascript works for this nonsense
+apply javascript
+then add styles 
+
