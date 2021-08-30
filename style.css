@@ -5,15 +5,16 @@ body {
 }
 
 
-.container {
-    width: 500px;
+.sketch-container {
+    display: grid;
+    max-width: 500px;
+    max-height: 500px;
     height: 500px;
-
+    width: 500px;
     background-color: #fff;
-    margin: auto;
-    align-self: auto;
     box-shadow: 3px 3px 3px rgb(148, 146, 146);
 }
+
 .header-div {
     height: 5vh;
     font-family: 'Ubuntu', sans-serif;
@@ -24,3 +25,89 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.container {
+    display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  button.active {
+    background-color: black;
+    color: rgb(216, 143, 143);
+  }
+
+  button,
+input[type='color'] {
+  transition: transform 0.1s ease-in-out;
+  background-color: rgb(221, 215, 215);
+}
+
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+}
+
+  input[type='color'] {
+    -webkit-appearance: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+  }
+  
+  input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .size-value {
+    margin-bottom: -20px;
+    font-size: 20px;
+  }
+
+  input[type='range'] {
+    -webkit-appearance: none;
+    background-color: rgb(221, 215, 215);
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid rgb(216, 145, 145);
+    border-radius: 25px;
+    background: rgb(0, 0, 0);
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    margin-top: -8px;
+    background: rgb(216, 143, 143);
+  }
+
+  

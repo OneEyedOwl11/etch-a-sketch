@@ -9,11 +9,18 @@
 </head>
 <body>
     <div class="header-div">Etch-a-Sketch</div>
+    <div class="container">
     <div class="settings">
-        <input type='color'>
+        <input type='color' id="colorPicker"><br>
+        <button id="colorBtn">Colour</button><br>
+        <button id="rainbowBtn">Rainbow</button><br>
+        <button id="eraserBtn">Eraser</button><br>
+        <button id="clearBtn">Clear</button><br>
+        <div id="sizeValue" class="size-value">16 x 16</div><br>
+        <input id="gridRange" type="range" min="1" max="64" value="16">
     </div>
-    <div class="container"></div>
-    
+    <div id="sketchContainer" class="sketch-container"></div>
+    </div>
 </body>
 <script src="js-file.js"></script>
 </html>
